@@ -1,0 +1,16 @@
+{
+    "manifest_version": 3,
+    "name": "Test Project",
+    "version": "1.0",
+    "description": "Change profile picture on LinkedIn",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+      {
+        "matches": ["https://www.linkedin.com/*"],
+        "js": ["index.js"]
+      }
+    ]
+  }
+  
