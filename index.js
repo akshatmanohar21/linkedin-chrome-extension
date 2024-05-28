@@ -3,7 +3,7 @@ const newPhoto = "https://pbs.twimg.com/media/FjU2lkcWYAgNG6d.jpg";
 const changePhotos = () => {
   const profilePhotos = document.querySelectorAll(
     'img.evi-image.ember-view.profile-photo-edit__preview, img[class*="EntityPhoto-circle"], img[class*="EntityPhoto-square"], img[class*="feed-identity-module__member-photo"]'
-  ); // Since photos are of different, I have used all the necessary selectors.
+  ); // Since photos are of different sizes, I have used common selectors like EntityPhoto-circle and EntityPhoto-square. This will target all the photos within these specific classes.
 
   profilePhotos.forEach((photo) => {
     if (photo.src !== newPhoto) {
